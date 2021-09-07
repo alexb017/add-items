@@ -6,9 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./index.css" />
-    <script src="./index.js"></script>
   </head>
   <body>
-    <div class="div"></div>
+    <nav>
+      <h1>List of Items</h1>
+    </nav>
+    <ul id="list">
+      <li>Hello World!</li>
+    </ul>
+    <div id="modal" class="modal">
+      <h1>Add new item</h1>
+      <div class="container">
+        <form action="" id="form">
+          <label for="">Name:</label>
+          <input
+            type="text"
+            id="input"
+            class="inputText"
+            placeholder="Name of item"
+          />
+          <input
+            type="submit"
+            class="btn btn-modal"
+            placeholder="Add new item"
+          />
+        </form>
+      </div>
+    </div>
+    <button id="addBtn" class="btn btn-add">Add item</button>
+    <script src="./index.js"></script>
   </body>
 </html>
