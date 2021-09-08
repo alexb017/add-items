@@ -16,3 +16,11 @@ form.addEventListener('submit', (event) => {
   list.insertAdjacentHTML('beforeend', `<li>${input.value}</li>`);
   input.value = '';
 });
+
+// close modal when press the Escape key
+document.addEventListener('keyup', (event) => {
+  const key = event.key;
+  if (key === 'Escape' && modal.classList.contains('show')) {
+    toggleModal();
+  }
+});
