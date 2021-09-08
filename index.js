@@ -13,7 +13,7 @@ btnAdd.addEventListener('click', toggleModal);
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   toggleModal();
-  list.insertAdjacentHTML('beforeend', `<li>${input.value}</li>`);
+  list.insertAdjacentHTML('afterbegin', `<li>${input.value}</li>`);
   input.value = '';
 });
 
