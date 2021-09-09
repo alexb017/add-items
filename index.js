@@ -6,11 +6,6 @@ const btnAdd = document.querySelector('#addBtn');
 
 const toggleModal = () => {
   modal.classList.toggle('show');
-  if (modal.classList.contains('show')) {
-    input.focus();
-  } else {
-    input.blur();
-  }
 };
 
 btnAdd.addEventListener('click', toggleModal);
@@ -18,7 +13,6 @@ btnAdd.addEventListener('click', toggleModal);
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   toggleModal();
-  input.blur();
   list.insertAdjacentHTML('afterbegin', `<li>${input.value}</li>`);
   input.value = '';
 });
