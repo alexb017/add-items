@@ -22,7 +22,7 @@ nav {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 24px;
 }
 
 ul {
@@ -33,7 +33,7 @@ ul {
 ul li {
   padding: 20px;
   background-color: white;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   margin: 20px 0;
   border-radius: 4px;
 }
@@ -75,8 +75,8 @@ ul li {
   border-radius: 2px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   width: 100%;
-  transition: opacity 0.2s ease-out;
   margin-bottom: 20px;
+  outline: none;
 }
 .modal p {
   margin-top: 40px;
